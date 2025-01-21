@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* shared style */
+.btn {
+  padding: 6px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.mt-1 {
+  margin-top: 20px;
+}
+.mb {
+  margin-bottom: 30px;
+}
+.display-flex {
+  display: flex;
+}
+
+header,
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.logo-image {
+  max-width: 62px;
+}
+.brand {
+  font-size: 2rem;
+  color: #111111;
+  font-weight: 700;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  gap: 50px;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav-links li {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.nav-item1 a {
+  color: #fea301;
+}
+.nav-item2 a {
+  color: #01acfd;
+}
+.nav-item3 a {
+  color: #05d4df;
+}
+.nav-item4 a {
+  color: #5d58ef;
+}
+
+.contact {
+  background: rgb(254, 163, 1);
+}
+.humberger {
+  display: none;
+}
+.banner-container {
+  max-width: 1158px;
+  margin: 0 auto;
+}
+.banner-container {
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.banner-image {
+  width: 100%;
+}
+.banner-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.empower {
+  color: #fea301;
+}
+.towords {
+  color: #01acfd;
+}
+.students {
+  color: #111111;
+}
+.banner-description {
+  color: rgb(17, 17, 17);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.enroll {
+  background: rgb(17, 17, 17);
+  font-weight: 700;
+}
+/* curriculmn section style */
+.curriculmn-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+.cards {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.card {
+  width: 100%;
+  max-width: 367px;
+  height: auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.card img {
+  max-width: 137px;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+.title {
+  color: rgb(32, 32, 32);
+  font-size: 1.5rem;
+}
+.description {
+  color: rgb(128, 128, 128);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.one {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #64c8ff;
+}
+.card {
+  max-width: 367px;
+  border: 1px solid red;
+}
+
+.card .one {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+@media screen and (max-width: 576px) {
+  .brand,
+  .nav li,
+  .contact {
+    display: none;
+  }
+  .humberger {
+    display: block;
+    margin-right: 10px;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .enroll {
+    padding: 6px 12px;
+  }
+}
