@@ -120,16 +120,18 @@ hr {
   display: none;
 }
 main {
-  background: url(assets/bg.png);
 }
 /* curriculmn section style */
 .curriculmn {
   max-width: 1160px;
   margin: 0 auto;
+  background: url(assets/bg.png);
+  background-position: center;
 }
 .Standard-curriculmn {
   margin-top: 60px;
 }
+
 .heading {
   font-size: 2.8rem;
   font-weight: 700;
@@ -231,6 +233,11 @@ main {
   font-weight: 900;
   color: #fff;
 }
+#left:hover,
+#right:hover {
+  background-color: #f57c00;
+  transform: scale(1.1);
+}
 
 .arrow {
   text-align: center;
@@ -241,30 +248,99 @@ main {
 }
 .container {
   margin-top: 30px;
-  gap: 10px;
-  background: rgb(255, 255, 255);
+  gap: 15px;
 }
 .training {
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  border-radius: 16px;
-  border: 2px solid green;
-  max-width: 540px;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
 }
+.training img {
+  border-radius: 16px;
+}
+.image-container1 {
+  position: relative;
+  display: inline-block;
+}
+
+.first-btn {
+  position: absolute;
+  bottom: -5px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgb(60, 216, 232);
+  border-radius: 20px;
+  border: none;
+  padding: 12px 20px;
+}
+.image-container2 {
+  position: relative;
+  display: inline-block;
+}
+.second-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #95b226;
+  border-radius: 20px;
+  border: none;
+  padding: 12px 20px;
+}
+.different {
+  background-color: #5d58f0;
+}
+
 .our-stories {
+  background: url(assets/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  margin-bottom: 0;
   max-width: 1160px;
   margin: 0 auto;
 }
+
 .activities {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   align-items: center;
-  justify-items: center;
-  border-radius: 16px;
-  border: 2px solid green;
+  width: 100%;
 }
+.container h3 {
+  margin: 20px 0px;
+  padding: 10px 0px;
+}
+.image-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  max-width: 290px;
+  height: auto;
+}
+.image-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 15px;
+}
+
+.image-card img {
+  border-radius: inherit;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .training-title {
   color: rgb(0, 0, 0);
   font-family: Quicksand;
@@ -280,6 +356,79 @@ main {
 }
 .training img {
   width: 100%;
+}
+.view-button {
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 60px;
+}
+.view-button button {
+  background-color: #111111;
+  color: white;
+}
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #01acfd;
+  /* margin-top: 60px; */
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 120px;
+  padding: 123px 228px 174px 140px;
+}
+.footer-logo {
+  display: flex;
+}
+
+.kids-education,
+.about-school,
+.social-media {
+  gap: 30px;
+}
+.footer > div {
+  flex: 1;
+  margin: 0 10px;
+}
+.kids-education,
+.about-school {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+ul li {
+  margin-bottom: 10px;
+}
+.about-school li {
+  list-style: none;
+  color: white;
+}
+.about {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-logo img {
+  filter: grayscale(100%) brightness(100%) contrast(2);
+}
+.kids-title {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.summary {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font: size 1.2rem;
+  font-weight: 400;
+}
+.social-media h2.about {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -304,5 +453,19 @@ main {
     display: block;
     height: 5px;
     color: #271c2f;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-logo {
+    display: flex;
+  }
+  .social-media img {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .training {
+    display: none;
   }
 }
